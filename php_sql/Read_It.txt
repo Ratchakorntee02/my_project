@@ -1,0 +1,7 @@
+** if u want to open my project name php_sql, 
+you should use xampp open the porject for see my web page**
+to access the login feature, please use this demo account
+login
+user: admin@gmail.com 
+password: 1234
+PS. function login it have bug but it work    

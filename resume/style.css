@@ -1,0 +1,111 @@
+/* ตั้งค่าในส่วนของ body  */
+body {
+    font-family: 'Arial',sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* กำหนดรูปแบบของ content */
+.content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ตั้งค่าในส่วนหัวข้อ h1 */
+h1 {
+    text-align: center;
+    color: #0056b3;
+}
+
+/* สร้างแท็บ */
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    background-color: #0056b3;
+    padding: 10px 0;
+}
+
+/* ตกแต่งในส่วนของ .nav a */
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s , color 0.3s;
+}
+
+/* เปลี่ยนสีของข้อความเมื่อเลื่อนเม้าไปที่หัวข้อนั้นๆ */
+.nav a:hover {
+    background-color: #ffdd57;
+    color: #0056b3;
+}
+
+/* กำหนดรูปแบบของรูปภาพหรือโปรไฟล์ */
+.profile-img {
+    display: block;
+    margin: 10px auto;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 3px solid #0056b3;
+}
+
+/* ตั้งค่าสำหรับในการแสดงฟีดแต่ละหัวข้อ */
+.feed {
+    display: none;
+    padding: 15px;
+}
+.feed.active {
+    display: block;
+}
+
+.card {
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.card h2{
+    margin-top: 0;
+    color: #0056b3;
+}
+
+/* แสดงผลการทำงานบนมือถือ */
+@media (max-width: 768px) {
+    .nav{
+        flex-direction: column;
+    }
+    
+    .nav a{
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .profile-img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .container{
+        padding: 10px;
+    }
+
+    .feed{
+        padding: 10px;
+    }
+
+    .card{
+        padding: 10px;
+    }
+}
